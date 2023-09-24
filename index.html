@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Deepak Sinha Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Cool things go here..</p>
+      <div class="container">
+        <div class="label-column">
+          <h2>About Me</h2>
+        </div>
+        <div class="value-column">
+          <p>Cool things go here.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut convallis ante, iaculis semper sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+        </div>
+      </div>
     </section>
 
     <section id="portfolio">
-        <div class="first-project">
-            <div class="project">
-                <h3>First Project !</h3>
-                <p>Description of Project 1.</p>
-            </div>
+      <div class="container">
+        <div class="label-column">
+          <h2>Portfolio</h2>
         </div>
-        <div class="other-projects">
+        <div class="value-column">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+            </div>
             <div class="project">
                 <h3>Project 2</h3>
                 <p>Description of Project 2</p>
@@ -48,22 +55,57 @@
                 <h3>Project 5</h3>
                 <p>Description of Project 5</p>
             </div>
-            <div class="project">
+            <!-- <div class="project">
                 <h3>Project 6</h3>
                 <p>Description of Project 6</p>
-            </div>
-        </div>
+            </div> -->
 
+
+          <!-- <div class="first-project">
+            <div class="project">
+              <h3>First Project !</h3>
+              <p>Description of Project 1.</p>
+            </div>
+          </div>
+          <div class="other-projects">
+            <div class="project">
+              <h3>Project 2</h3>
+              <p>Description of Project 2</p>
+            </div>
+            <div class="project">
+              <h3>Project 3</h3>
+              <p>Description of Project 3</p>
+            </div>
+            <div class="project">
+              <h3>Project 4</h3>
+              <p>Description of Project 4</p>
+            </div>
+            <div class="project">
+              <h3>Project 5</h3>
+              <p>Description of Project 5</p>
+            </div>
+            <div class="project">
+              <h3>Project 6</h3>
+              <p>Description of Project 6</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Contact information</p>
+      <div class="container">
+        <div class="label-column">
+          <h2>Contact</h2>
+        </div>
+        <div class="value-column">
+          <p>Contact information</p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Your Portfolio</p>
+      <p>&copy; 2023 Deepak Sinha</p>
     </footer>
-</body>
-
+  </body>
 </html>
