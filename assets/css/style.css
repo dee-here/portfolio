@@ -1,10 +1,9 @@
+/* use these variables for setting colors and backgrounds */
 :root {
     --body-color: #f8f7f1;
-    /* --body-color: #f8f7f1; */
-    --anchor-color: #333;
+    --anchor-color: #0645ad;
     --text-color: #333;
-
-    --project-border-color: #5ff5d4a6;
+    --project-border-color: #c5c5c2;
 }
 
 body {
@@ -19,41 +18,30 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: #111; */
-    /* border: 2px solid orange; */
 }
 
-a {
-    color: var(--anchor-color);
-}
-a:hover {
-    color: var(--anchor-color);
-}
+/* all anchor links */
+a,
+a:hover,
 a:visited {
     color: var(--anchor-color);
 }
 
+/* Header section  */
 header summary.details {
-    /* padding: 50px; */
-    /* border: 1px solid orange; */
     display: flex;
-    
 }
 
 .profile-photo {
     flex-basis: 40%;
-    /* background-image: url("../images/dee-profile.jpg"); */
     min-width: 150px;
     background: url("../images/dee-profile.jpg") no-repeat left top;
     background-size: cover;
-    /* border: 5px groove #888; */
-    border-radius: 5px; 
-    /* border: 5px solid transparent; */
+    border-radius: 5px;
     box-shadow: 5px 5px 10px var(--text-color);
-
 }
 
-.profile-photo span{
+.profile-photo span {
     display: block;
     font-size: 200px;
 }
@@ -61,64 +49,44 @@ header summary.details {
 .profile-intro {
     font-size: 200%;
     margin: 15px;
-    /* border: 1px solid magenta; */
+    text-align: left;
 }
+
 .profile-intro h1 {
     font-size: 160%;
-    /* border: 1px solid blue; */
     white-space: nowrap;
     line-height: 1.5;
-
 }
-
 
 header nav {
     padding: 5px;
-    margin-top:20px;
-    border-bottom: 2px groove #333;
-
+    margin-top: 20px;
+    border-bottom: 2px groove var(--text-color);
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
 }
 
-nav ul li {
-}
-
 nav ul li a {
-    /* border: 1px solid yellowgreen; */
     padding: 15px;
     margin: 20px;
 }
 
 section {
-    /* padding: 40px; */
     margin: 10px auto;
     width: 80%;
-    /* border-bottom: 5px solid blue; */
 }
 
-#portfolio {
-    /* background-color: #d8ddf7ab; */
-    /* background-image: linear-gradient(to bottom, var(--body-color) , rgba(3, 56, 31, 0.452)); */
-}
-
+/* Portfolio section */
 .project {
-    /* margin-bottom: 40px; */
-    /* border: 1px dashed #777; */
-    /* border-radius: 3px; */
-    padding: 10px;
-    background-image: linear-gradient(to right, #99c0bdb7, rgba(70, 136, 76, 0.753));
+    background-image: linear-gradient(to right, #fffdf7, #d8d8d7);
     box-shadow: 5px 5px 10px #aaa;
-
-    border: 5px groove #5ff5d4a6;
-
+    border: 1px solid var(--project-border-color);
 }
 
 footer {
-    /* background-color: #333;
-    color: #fff; */
     text-align: center;
     padding: 10px 0;
 }
@@ -127,106 +95,93 @@ footer {
 .container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content:flex-start; */
-    /* background-color: red; */
     padding: 20px;
 }
-
-.container .label-column{
+/* use this to handle left titles  */
+.container .label-column {
     flex: 1;
-    border: 1px solid yellow;
-    /* text-align: left; */
-    /* padding-right: 10px; */
-    border-right: 1px solid #333;
 }
-
-.container .value-column{
+/* use this for display the right sode content */
+.container .value-column {
     flex: 4;
-    border: 1px solid orange;
-    /* text-align: left; */
-    /* padding-left: 10px; */
-    border-right: 1px solid #000;
 }
 
 /* add flex to value column */
-.container .value-column{
+.container .value-column {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 /* add flex box specific to portfolio section*/
-#portfolio .container .value-column{
+#portfolio .container .value-column {
     gap: 20px;
     row-gap: 50px;
-
 }
 
 #portfolio .container .value-column .project {
-    /* flex: 1; */
     max-width: 50%;
     flex-basis: calc(50% - 10px);
-/* 
-    min-height: 150px; */
-
     min-height: 250px;
     background-size: cover;
-    
+    position: relative;
+    border-radius: 5px;
 }
 
 #portfolio .container .value-column .project:first-child {
-    /* flex: 1; */
     max-width: 100%;
     flex-basis: 100%;
     min-height: 350px;
-    
 }
+
 /* hover effect for projects !! */
 .project {
-   opacity: 80%;
+    opacity: 80%;
 }
 
 .project:hover {
     opacity: 100%;
-    box-shadow: 5px 5px 10px #666;
-    transition: all .4s ease;
- }
-
-
-
-#contact .value-column p {
-    font-weight: bold;
-    margin-right: 100px;
+    box-shadow: 5px 5px 10px var(--text-color);
+    transition: all 0.4s ease;
 }
-
 
 /* Add background images for each projects  */
 .project-one {
-    background: url("../images/horiseon-header.png") no-repeat right top;
-    /* background-size: cover; */
+    background: url("../images/horiseon-header.png") no-repeat left top;
 }
 
-.project-two{
+.project-two {
     background: url("../images/css-mini-project-scrnshot-2.png") no-repeat center center;
-    /* background-size: cover; */
 }
 
 .project-three {
     background: url("../images/basic-landing-page-scrnshot.png") no-repeat center center;
-    /* background-size: cover; */
+}
+/* the title and label on top of the project images */
+.project ul {
+    position: absolute;
+    bottom: 60px;
+    padding: 10px;
+    background-color: #fff;
+    opacity: 1;
+    box-shadow: 5px 5px 10px #333;
+    color: var(--text-color);
 }
 
+.project p {
+    font-size: 75%;
+    line-height: 1.5;
+}
 
+#contact .value-column p {
+    margin-right: 100px;
+}
 
 /* Responsive design -media queries */
 /* split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
     section {
-      width: 90%;
-    }
-    /* Change the header color */
-    header {
-      background: #772014;
+        width: 90%;
     }
     .container {
         flex-direction: column;
@@ -236,29 +191,20 @@ footer {
     }
     summary.details .profile-photo {
         min-height: 250px;
-        /* background-size: contain; */
         background-position: center;
     }
-  }
-  
-  /* Cards are stacked on top of each other at 768px or smaller */
-  @media screen and (max-width: 768px) {
-    section {
-      width: 95%;
-    }
-    /* Change the header color */
-    header {
-      background: #8ac4ff;
-    }
-  }
+}
 
-  /* Cards are stacked on top of each other at 768px or smaller */
-  @media screen and (max-width: 500px) {
+/* For 768px or smaller screens */
+@media screen and (max-width: 768px) {
     section {
-      width: 99%;
+        width: 95%;
     }
-    /* Change the header color */
-    header {
-      background: yellow;
+}
+
+/* For 500px or smaller screens */
+@media screen and (max-width: 500px) {
+    section {
+        width: 99%;
     }
-  }
+}
