@@ -164,7 +164,7 @@ footer {
     padding: 10px;
     background-color: #fff;
     opacity: 1;
-    box-shadow: 5px 5px 10px #333;
+    box-shadow: 5px 5px 10px var(--text-color);
     color: var(--text-color);
 }
 
