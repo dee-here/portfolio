@@ -157,6 +157,13 @@ footer {
 .project-three {
     background: url("../images/basic-landing-page-scrnshot.png") no-repeat center center;
 }
+
+.project-four {
+    background: url("../images/space-jam-x.png");
+}
+.project-weather-dash {
+    background: url("../images/weather-dash.png");
+}
 /* the title and label on top of the project images */
 .project ul {
     position: absolute;
