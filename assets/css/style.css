@@ -168,6 +168,9 @@ footer {
 .project-majority-matters {
     background: url("../images/majority-matters.gif");
 }
+.readit {
+    background: url("../images/ReadIt.gif");
+}
 /* the title and label on top of the project images */
 .project ul {
     position: absolute;
